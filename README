@@ -1,0 +1,35 @@
+#Name:Raunak Agarwal
+#Student ID- 1636678
+#CMPUT-274, Fall 2020
+#Assignment 2: Huffman coding
+
+Files Included:
+-util.py
+-README
+
+Running Instructions:
+-read_tree(tree_stream)-loads the tree from the tree_stream using pickle
+						module and then returns this tree.
+
+-decode_byte(tree,bitreader)- This function finds the leaf of the tree using
+						bitreader and returns back this leaf.
+
+-decompress(compressed,uncompressed)- Uses the compressed file obj. to load
+						the tree and also create an instance of bitreader. 
+						uncompressed file object is passed as an argument
+						for the bitwriter where the leaves of the tree are
+						written to uncompressed.
+
+-write_tree(tree,tree_stream)- This function dumps the tree to the tree_stream
+						using pickle module.
+
+-compress(tree,uncompressed,compressed)- writes tree to the compressed file
+						obj. and creates an instance of bitreader using
+						uncompressed and bitwriter using compressed. 
+						Reads through the uncompressed file till the end,
+						while simultaneously writing the byte to compressed.
+						When the file has been read completely, it also
+						writes down the position for the end of the file.
+						
+
+
