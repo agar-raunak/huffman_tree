@@ -7,8 +7,7 @@ import bitio
 import huffman
 import pickle
 
-#another comment
-
+##
 def read_tree(tree_stream):
     '''Read a description of a Huffman tree from the given compressed
     tree stream, and use the pickle module to construct the tree object.
